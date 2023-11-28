@@ -129,8 +129,30 @@ header .container {
 .fourth .container {
     display: flex;
     background-color: #3882f6;
+    justify-content: space-between;
     color: #f9faf8;
     margin: 100px auto;
     border-radius: 20px;
 }
 
+@media (max-width: 800px) {
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .second .container {
+        flex-direction: column;
+    }
+
+    .fourth .container {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fourth button.signup {
+        margin-bottom: 10px;
+    }
+}
