@@ -123,6 +123,7 @@ header .container {
 .second .container .box p {
     background-color: aqua;
     padding: 10px;
+    border-radius: 10px;
 }
 
 .fourth .container {
