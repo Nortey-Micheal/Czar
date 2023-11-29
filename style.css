@@ -9,6 +9,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     background-color: #fff;
     font-size: 20px;
+    height: 100vh;
 }
 
  .nav, ul, a {
@@ -135,7 +136,24 @@ header .container {
     border-radius: 20px;
 }
 
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    flex-grow: 1;
+}
+
 @media (max-width: 800px) {
+    * {
+        font-size: medium;
+    }
+
+    q {
+        font-size: larger;
+    }
     .header .container {
         flex-direction: column;
         text-align: center;
@@ -154,9 +172,19 @@ header .container {
 
     .fourth button.signup {
         margin-bottom: 10px;
+        font-size: larger;
+    }
+
+    .second h2 {
+        padding: 20px;
+        text-align: center;
     }
 
     .header .container img {
         max-width: 260px;
+    }
+
+    h1 {
+        font-size: 35px;
     }
 }
