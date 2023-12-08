@@ -36,9 +36,12 @@ button.signup {
 }
 
 nav, header, footer {
-    background-color: #1f2937;
+    background-color: #261b51;
 }
-
+.nav .container img {
+    margin: 0;
+    padding: 0;
+}
 h1 {
     font-size: 48px;
     font-weight: bolder;
@@ -186,5 +189,11 @@ header .container {
 
     h1 {
         font-size: 35px;
+    }
+    .navbar .container {
+        flex-direction: column;
+    }
+    .navbar  .nav {
+        justify-content: space-between;
     }
 }
